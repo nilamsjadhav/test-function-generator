@@ -1,0 +1,28 @@
+#! /bin/bash
+
+source tests/test.sh
+source tests/assert.sh
+source test_function_generator.sh
+
+function all_test_cases() {
+  echo -e "${WHITE}read_test_function_name${NORMAL}"
+  test_read_test_function_name
+
+  echo -e "${WHITE}read_description${NORMAL}"
+  test_read_description
+
+  echo -e "${WHITE}read_input${NORMAL}"
+  test_read_input
+
+  echo -e "${WHITE}read_expected${NORMAL}"
+  test_read_expected
+
+  echo -e "${WHITE}read_callee_function_name${NORMAL}"
+  test_read_callee_function_name
+
+  echo -e "${WHITE}generate_test_function${NORMAL}"
+  test_generate_test_function
+  display_failed_records
+}
+
+all_test_cases

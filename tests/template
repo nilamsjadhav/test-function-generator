@@ -1,0 +1,8 @@
+function __TEST_FUNCTION_NAME__() {
+  local description="__DESCRIPTION__"
+  local input="__INPUT__"
+  local expected="__EXPECTED__"
+
+  local actual=$( __CALLEE_FUNCTION_NAME__ "${input}")
+  assert_expectation "${actual}" "${expected}" "${description}" "__CALLEE_FUNCTION_NAME__"
+}

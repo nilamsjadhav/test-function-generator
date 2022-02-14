@@ -1,0 +1,8 @@
+function test_is_equal() {
+  local description="Should return 0 if numbers are equal"
+  local input="1 2"
+  local expected="0"
+
+  local actual=$( is_equal "${input}")
+  assert_expectation "${actual}" "${expected}" "${description}" "is_equal"
+}

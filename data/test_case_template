@@ -1,0 +1,18 @@
+# TEST FUNCTION NAME 
+test_is_equal
+
+# TEST DESCRIPTION
+Should generate function using given values
+
+# INPUTS NAMES
+num1 num2
+
+# INPUT VALUES
+2
+2
+
+# EXPECTED
+0
+
+# CALLEE_FUNCTION_NAME
+is_equal
